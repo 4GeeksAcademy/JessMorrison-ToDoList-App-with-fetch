@@ -17,7 +17,7 @@ body {
 }
 
 .inputToDo {
-    font-size: 20px;
+    font-size: 18px;
     width: 450px;
     outline: none;
     border: none;
@@ -72,13 +72,14 @@ li {
 
 .toDoBody button {
     display: inline-flex;
-    margin-left: -2px;
-    text-align: center;
+    margin-left: -5px;
+    align-content: center;
     outline: none;
     border: none;
     background-color: white;
-    font-size: 22px;
-    color: red;
+    font-size: 20px;
+    color: darkslategray;
+    padding-top: 8px;
 }
 
 .tasks {

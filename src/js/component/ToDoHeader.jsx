@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import ToDoList from "./ToDoList";
 
 
 
-const ToDoHeader = ({toDos, setToDos, inputNewTask, setInputNewTask}) => {
-
+const ToDoHeader = ({toDos, setToDos, inputNewTask, setInputNewTask, idCounter, setIdCounter}) => { 
 
     function handleInput() {
         const task = {
-            id: toDos.length === 0 ? 1 : toDos[toDos.length - 1].id + 1,
+            id: idCounter,
             taskName: inputNewTask,
         };
         setToDos([...toDos, task]);
+        setIdCounter(x => x + 1)
+        setInputNewTask("")
     }
     return (
 		<>
@@ -35,11 +35,9 @@ const ToDoHeader = ({toDos, setToDos, inputNewTask, setInputNewTask}) => {
                             onClick={handleInput}
                         >Add Task</button>
                     </div>
-                    
-			
+                
 		</>
 	);
 };
 
 export default ToDoHeader;
-
