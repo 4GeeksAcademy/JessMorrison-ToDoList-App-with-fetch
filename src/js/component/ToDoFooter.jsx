@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
-const ToDoFooter = ({toDos}) => {
+
+
+const ToDoFooter = ({toDos, setToDos}) => {
+
     return (
         <>
             <div className="toDoFooter">

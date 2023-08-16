@@ -54,6 +54,7 @@ li {
 
 .toDoFooter {
     display: block;
+    padding-top: -50px;
     margin: auto;
     background-color: white;
     width: 530px;
@@ -96,4 +97,9 @@ li {
 .validate {
     height: 32px;
     margin-top: 15px;
+}
+.clear-list {
+    display: block;
+    margin: auto;
+    transform: translateY(5px);
 }
